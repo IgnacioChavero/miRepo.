@@ -1,0 +1,153 @@
+$primary-color: #00cba9;
+$background-color: #fff;
+$text-color: #000;
+$font-family: 'Montserrat', sans-serif;
+
+body, h1, h2, h3, p {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: $font-family;
+  background-color: $background-color;
+  color: $text-color;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+header {
+  background-image: url(./assets/img/clean.jpg);
+  background-size: cover;
+  text-align: center;
+  padding: 100px 0;
+
+  h1 {
+    color: $primary-color;
+    font-size: 36px;
+    margin-top: 20px;
+  }
+
+  .textos-header {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+
+    h2 {
+      color: $primary-color;
+      font-size: 24px;
+      margin-top: 20px;
+    }
+
+    p {
+      color: $text-color;
+      font-size: 18px;
+      margin-top: 20px;
+    }
+  }
+}
+
+.categorias {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  text-align: center;
+}
+
+.categoria {
+  background-color: $background-color;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+
+  img {
+    max-width: 100%;
+    border-radius: 10px;
+  }
+
+  h3 {
+    color: $primary-color;
+    font-size: 20px;
+    margin-top: 10px;
+  }
+}
+
+.productos-destacados {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  text-align: center;
+}
+
+.producto {
+  background-color: $background-color;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+
+  img {
+    max-width: 100%;
+    border-radius: 10px;
+  }
+
+  h3 {
+    color: $primary-color;
+    font-size: 20px;
+    margin-top: 10px;
+  }
+
+  p {
+    color: $text-color;
+    font-size: 18px;
+    margin-top: 10px;
+  }
+}
+
+button {
+  background-color: $primary-color;
+  color: $background-color;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 20px;
+}
+
+.testimonios {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.testimonio {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+
+  blockquote {
+    color: $text-color;
+    font-size: 18px;
+    font-style: italic;
+  }
+
+  p {
+    color: $text-color;
+    font-size: 16px;
+    margin-top: 10px;
+  }
+}
+
+footer {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px;
+  border-top: 1px solid #ddd;
+  margin-top: 40px;
+  border-radius: 10px;
+}
